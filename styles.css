@@ -1,0 +1,52 @@
+html, body, div {
+  margin: 0;
+  padding: 0;
+}
+
+#board {
+  margin: auto;
+}
+
+.piece {
+  visibility: hidden;
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+}
+
+.two {
+  background-color: black;
+}
+
+.one {
+  background-color: red;
+}
+
+.king {
+  visibility: hidden;
+  height: 60%;
+  width: 60%;
+  margin: 5% auto;
+  border-radius: 100%;
+}
+
+.active {
+  visibility: visible;
+}
+
+.selected {
+  background-color: rgb(190, 190, 0) !important;
+}
+
+.col {
+  display: inline-block;
+  height: 100%;
+}
+
+.row:nth-child(even)>.col:nth-child(even) {
+  background-color: #555;
+}
+
+.row:nth-child(odd)>.col:nth-child(odd) {
+  background-color: #555;
+}
